@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Automobile - Used Car Parts & Services | Ukalana Mandi, Hisar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7d5b6434-3cc8-47fa-9420-2d5cedc4cca7.png') no-repeat center center;
+            background-size: cover;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .inventory-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .inventory-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d83ba9db-30a0-4fba-b095-94f7063e7e8a.png" alt="Balaji Automobile logo featuring a car wheel and wrench in blue and white" class="h-12">
+                    <h1 class="text-xl font-bold">BALAJI AUTOMOBILE</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-blue-400 transition">Home</a>
+                    <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                    <a href="#inventory" class="hover:text-blue-400 transition">Inventory</a>
+                    <a href="#testimonials" class="hover:text-blue-400 transition">Testimonials</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                <a href="tel:8529999000" 
+                   class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Call Now</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section min-h-screen flex items-center text-white">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">YOUR TRUSTED AUTO PARTNER IN UKLANA MANDI</h1>
+                <p class="text-xl mb-8">Specializing in quality used car parts, repairs, and comprehensive automobile services since 2010</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg font-medium transition">Get Quote</a>
+                    <a href="#services" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-6 py-3 rounded-lg text-lg font-medium transition">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">OUR AUTOMOBILE SERVICES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/016b901a-3c7f-4239-af35-3997d7350a9a.png" alt="Professional mechanic working on car engine with various tools in Balaji Automobile service center" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Car Maintenance & Repairs</h3>
+                        <p class="text-gray-600">Complete engine services, brake repairs, suspension work, and all mechanical repairs using genuine parts.</p>
+                        <button class="mt-4 bg-blue-100 hover:bg-blue-200 text-blue-800 font-medium py-2 px-4 rounded transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/36f44b0f-e350-4ac7-aee0-ccc076156fe0.png" alt="Organized rack of various car spare parts including Maruti, Hyundai, Tata, and Mahindra components" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Quality Used Auto Parts</h3>
+                        <p class="text-gray-600">Huge inventory of genuine used parts for all Indian car brands at affordable prices.</p>
+                        <button class="mt-4 bg-blue-100 hover:bg-blue-200 text-blue-800 font-medium py-2 px-4 rounded transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b3a44275-7ca5-4892-b985-cd1fe9889888.png" alt="Diagnostic equipment connected to a Maruti Suzuki Swift dashboard during computer analysis" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Computerized Diagnostics</h3>
+                        <p class="text-gray-600">Advanced diagnostics for all modern Indian cars to accurately identify and fix electrical issues.</p>
+                        <button class="mt-4 bg-blue-100 hover:bg-blue-200 text-blue-800 font-medium py-2 px-4 rounded transition">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Section with Indian Cars -->
+    <section id="inventory" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">OUR CAR PARTS INVENTORY</h2>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                We maintain a comprehensive stock of parts for all major Indian car brands like Maruti Suzuki, Tata, Hyundai, Mahindra, and more.
+            </p>
+            
+            <h3 class="text-2xl font-semibold mb-6 text-center">Featured Components Available</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Maruti Suzuki Swift -->
+                <div class="inventory-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b64bd77b-b14e-4f48-8196-4fe804e8cc7f.png" alt="Maruti Suzuki Swift in silver color with various highlighted spare parts like headlights, bumper, and engine components" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold">Maruti Suzuki Swift</h4>
+                        <p class="text-sm text-gray-600 mt-1">Engine, Transmission, Body Parts</p>
+                        <button class="mt-2 text-xs bg-green-100 hover:bg-green-200 text-green-800 py-1 px-2 rounded transition">
+                            Available
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Tata Nexon -->
+                <div class="inventory-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0a7f9336-3427-422f-8bc0-0c6feae34c6a.png" alt="Tata Nexon in blue color with parts like headlamps, alloy wheels, and touchscreen infotainment system" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold">Tata Nexon</h4>
+                        <p class="text-sm text-gray-600 mt-1">Suspension, Electrical, Interior</p>
+                        <button class="mt-2 text-xs bg-green-100 hover:bg-green-200 text-green-800 py-1 px-2 rounded transition">
+                            Available
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Hyundai Creta -->
+                <div class="inventory-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8bedd339-c25f-4363-9be8-50c6f8420556.png" alt="Hyundai Creta SUV in white color showing spare parts availability" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold">Hyundai Creta</h4>
+                        <p class="text-sm text-gray-600 mt-1">Body Panels, Lights, AC Parts</p>
+                        <button class="mt-2 text-xs bg-green-100 hover:bg-green-200 text-green-800 py-1 px-2 rounded transition">
+                            Available
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mahindra Scorpio -->
+                <div class="inventory-card bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e7c14178-ba09-4070-a47d-7ad8100b4a5b.png" alt="Mahindra Scorpio in black color with available spare parts" class="w-full h-40 object-cover">
+                    <div class="p-4">
+                        <h4 class="font-bold">Mahindra Scorpio</h4>
+                        <p class="text-sm text-gray-600 mt-1">Diesel Engine Components, 4x4 Parts</p>
+                        <button class="mt-2 text-xs bg-green-100 hover:bg-green-200 text-green-800 py-1 px-2 rounded transition">
+                            Available
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-semibold mb-6">More Indian Car Brands We Support</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="brand-logo bg-white p-4 rounded-lg shadow">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e5b12b87-e4ea-4341-a0e9-551b412e9c7a.png" alt="Maruti Suzuki logo with available Alto, Swift, Dzire, Baleno and WagonR parts" class="h-16 mx-auto">
+                    </div>
+                    <div class="brand-logo bg-white p-4 rounded-lg shadow">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c3c481f2-adb1-48b1-a805-4e1f4535d451.png" alt="Tata Motors logo with available Nexon, Harrier, Tiago and Safari parts" class="h-16 mx-auto">
+                    </div>
+                    <div class="brand-logo bg-white p-4 rounded-lg shadow">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8f7b6fb-859c-4348-846c-8e2041a0bc4d.png" alt="Hyundai logo with available i20, Creta, Venue and Verna parts" class="h-16 mx-auto">
+                    </div>
+                    <div class="brand-logo bg-white p-4 rounded-lg shadow">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0926b699-0eca-4942-ba56-b79a37244900.png" alt="Mahindra logo with available Thar, XUV700, Scorpio and Bolero parts" class="h-16 mx-auto">
+                    </div>
+                    <div class="brand-logo bg-white p-4 rounded-lg shadow">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fe3c6c0b-0b1a-4144-830e-d5c68a3808cf.png" alt="Kia logo with available Seltos and Sonet parts" class="h-16 mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">WHAT OUR CUSTOMERS SAY</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a0a1f92-8109-43e3-9eaa-e9389e81b57d.png" alt="Satish Kumar, satisfied customer standing next to his repaired Tata Nexon" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Satish Kumar</h4>
+                            <p class="text-gray-600 text-sm">Local Business Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Got genuine Swift parts at half the dealer price. Saved my son's car when we had an accident. Trust Balaji Automobile completely!"
+                    </p>
+                    <div class="flex mt-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7f0ca462-d1c9-4ca8-8941-4e262f305ce2.png" alt="Priya Sharma, taxi fleet owner with her lineup of Maruti Ertiga vehicles" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Priya Sharma</h4>
+                            <p class="text-gray-600 text-sm">Taxi Fleet Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "For my Ertiga taxi fleet, I only use Balaji Automobile. Their quick service and genuine parts keep my vehicles running smoothly."
+                    </p>
+                    <div class="flex mt-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/073f04cb-7c2c-4a77-a5d1-8a2c8f7c4540.png" alt="Rajesh Mehta, farmer with his Mahindra Thar near Ukalana fields" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold">Rajesh Mehta</h4>
+                            <p class="text-gray-600 text-sm">Local Farmer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Fixed my Thar's suspension perfectly. These guys understand rural vehicle needs better than city dealers."
+                    </p>
+                    <div class="flex mt-3">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">CONTACT BALAJI AUTOMOBILE</h2>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">OUR LOCATION</h3>
+                        <p class="text-gray-700 mb-6">
+                            Ukalana Mandi, District Hisar, Haryana<br>
+                            Near Bus Stand, Opposite HP Petrol Pump
+                        </p>
+                        
+                        <h3 class="text-xl font-bold mb-4">CONTACT DETAILS</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone-alt mr-4 text-blue-600"></i>
+                                <div>
+                                    <p class="font-medium">Primary Number</p>
+                                    <a href="tel:8529999000" class="text-blue-600 hover:underline">8529999000</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-mobile-alt mr-4 text-blue-600"></i>
+                                <div>
+                                    <p class="font-medium">Secondary Number</p>
+                                    <a href="tel:9518088247" class="text-blue-600 hover:underline">9518088247</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-clock mr-4 text-blue-600"></i>
+                                <div>
+                                    <p class="font-medium">Working Hours</p>
+                                    <p class="text-gray-700">Monday-Saturday: 8:00 AM - 8:00 PM<br>Sunday: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-3">Connect With Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://wa.me/918529999000" class="whatsapp-btn w-12 h-12 rounded-full flex items-center justify-center text-white text-xl">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white text-xl hover:bg-blue-700 transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center text-white text-xl hover:bg-pink-700 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold mb-4">SEND US A MESSAGE</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="name">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="car">Car Model (Optional)</label>
+                                <input type="text" id="car" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="e.g., Maruti Swift Dzire 2018">
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2" for="message">Your Requirements</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-bold mb-4">BALAJI AUTOMOBILE</h4>
+                    <p class="text-gray-400">
+                        Your trusted partner for quality used car parts and automobile services in Ukalana Mandi, Hisar.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">QUICK LINKS</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#inventory" class="text-gray-400 hover:text-white transition">Inventory</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">MAIN SERVICES</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">Used Car Parts</li>
+                        <li class="text-gray-400">Mechanical Repairs</li>
+                        <li class="text-gray-400">Dent & Paint Work</li>
+                        <li class="text-gray-400">Electrical Work</li>
+                        <li class="text-gray-400">AC Services</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">CONTACT INFO</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">Ukalana Mandi, Distt. Hisar, Haryana 125042</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">8529999000, 9518088247</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">balajiautohisar@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Balaji Automobile. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918529999000" class="fixed bottom-6 right-6 whatsapp-btn w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl shadow-lg">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
